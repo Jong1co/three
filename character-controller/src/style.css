@@ -6,3 +6,42 @@ body {
 * {
   box-sizing: border-box;
 }
+
+#progress-bar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#progress-bar {
+  width: 30%;
+  height: 1%;
+  background: gray;
+  color: white;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+#progress-bar::-moz-progress-bar {
+  background: white;
+}
+
+#progress-bar::-webkit-progress-value {
+  background: white;
+}
+
+#progress-bar::-webkit-progress-bar {
+  background: rgba(255, 255, 255, 0.4);
+}
